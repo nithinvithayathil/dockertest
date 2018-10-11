@@ -1,13 +1,24 @@
-FROM node:8
-USER root
-WORKDIR /usr/src/app
-COPY . /usr/src/app
-RUN apt-get install curl &&\
-    apt-get update &&\
-	curl -sL https://deb.nodesource.com/setup 10.x|bash - &&\
-	apt-get install -f nodejs &&\
-	apt-get install -f npm &&\		
-	apt-get install dialog apt-utils -f &&\
-	npm install
-EXPOSE 3000
-CMD [ "npm", "start" ]
+{
+  "name": "converter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+        "start": "node ./app/server.js"
+  },
+  "config": {
+    "main_class": "./app/server.js",
+    "bin": "bin",
+    "name": "Nodejscode"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0",
+        "build-jar": "^1.0.0"
+  }
+}
