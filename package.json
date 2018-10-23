@@ -1,0 +1,37 @@
+{
+  "name": "Datetimechecker",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "start": "node ./index.js",
+    "release": "npm-version-up"
+  },
+  "config": {
+    "main_class": "./datetime.js",
+    "bin": "bin",
+    "name": "Nodejscode"
+  },
+  "keywords": [
+    "test",
+    "mocha",
+    "chai",
+    "mockery",
+    "automated",
+    "example",
+    "skeleton",
+    "project",
+    "template"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "build-jar": "^1.0.0",
+    "chai": "^3.5.0",
+    "mocha": "^5.2.0",
+    "mockery": "^2.0.0",
+    "npm-version-up": "latest",
+    "request": "^2.88.0"
+  }
+}
