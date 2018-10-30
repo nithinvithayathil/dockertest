@@ -6,4 +6,4 @@ var timeInMss = new Date(Date.now()).toLocaleString();
 res.write('Current Date and time is ' +timeInMss);
 res.end();
 });
-app.listen(3000);
+app.listen(4000);
