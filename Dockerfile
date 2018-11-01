@@ -8,5 +8,5 @@ RUN apt-get install curl &&\
     apt-get install -y -f nodejs &&\		
     apt-get install dialog apt-utils -y -f &&\
     npm install
-EXPOSE 3000
+EXPOSE 4000
 CMD [ "npm", "start" ]
