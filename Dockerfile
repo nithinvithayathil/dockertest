@@ -2,7 +2,6 @@ FROM node:8
 USER root
 WORKDIR /usr/src/app
 COPY . /usr/src/app
-ADD VERSION .
 RUN apt-get install curl &&\
     apt-get update &&\
     curl -sL https://deb.nodesource.com/setup 10.x|bash - &&\
